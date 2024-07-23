@@ -1,18 +1,21 @@
 import React, { useState } from 'react'
 import logo from "../assets/Images/logo.png"
 import { Link } from 'react-scroll';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
 function Navbar() {
 
   const [toggle, setToggle] = useState(false);
 
-  navigation = [{
+  const navigate = useNavigate();
 
-  }]
+  const handleLogin =()=>{
+    navigate("/login")
+  }
 
   return (
-    <div className=' w-full h-auto flex bg-transparent justify-between items-center px-32 py-6 absolute z-10'>
+    <div className=' w-full h-auto flex bg-transparent justify-between items-center px-12 mg:px-32 py-6 absolute z-10'>
       <div className="justify-center items-center">
         <img src={logo} alt="" className=' h-10' />
       </div>
@@ -55,7 +58,7 @@ function Navbar() {
           </ul>
         </div>
         <div>
-          <button className='bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md'>
+          <button className='bg-primary hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md' onClick={handleLogin}>
             Sign In
           </button>
         </div>

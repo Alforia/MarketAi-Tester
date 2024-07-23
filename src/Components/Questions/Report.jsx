@@ -1,11 +1,11 @@
 import React from 'react'
 
-const LoginComponent = () => {
+const Report = () => {
   return (
     <div>
-
+      Report page
     </div>
   )
 }
 
-export default LoginComponent
+export default Report
