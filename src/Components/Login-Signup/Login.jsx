@@ -1,10 +1,7 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 
-const Login = () => {
 
-    
-
+const Login = ({switchToForgot}) => {
 
     return (
         <div className="w-screen min-h-screen flex items-center justify-center  px-4 sm:px-6 lg:px-8">
@@ -28,8 +25,8 @@ const Login = () => {
                     <div className="w-full flex flex-col gap-0">
                         <label className="font-semibold text-xs text-gray-400 ">Password</label>
                         <input type="password" className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500 " placeholder="••••••••" />
-                        <div className=' flex items-end justify-end w-full'>
-                            <p className=' text-primary text-sm'>forgot password?</p>
+                        <div className=' flex items-end justify-end w-full' onClick={switchToForgot}>
+                            <p className=' text-primary text-sm hover:text-blue-700 cursor-pointer' >forgot password?</p>
                         </div>
 
                     </div>
