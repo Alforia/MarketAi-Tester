@@ -10,46 +10,43 @@ const Signup = ({ switchToLogin }) => {
         </h1>
 
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <input
-                type="text"
-                id="firstName"
-                name="firstName"
-                className="mt-1 p-2 w-full border rounded-lg"
-                placeholder="First Name"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                id="lastName"
-                name="lastName"
-                className="mt-1 p-2 w-full border rounded-lg"
-                placeholder="Last Name"
-              />
-            </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
+          <div className="flex flex-col gap-2">
+                <label className="font-semibold text-xs text-gray-400 ">First Name</label>
+                <input
+                  type="text"
+                  className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500"
+                  placeholder="First Name"
+                />
+              </div>
+              <div className="flex flex-col gap-2">
+                <label className="font-semibold text-xs text-gray-400 ">Last Name</label>
+                <input
+                  type="text"
+                  className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500"
+                  placeholder="Last Name"
+                />
+              </div>
           </div>
 
-          <div className="mt-4">
-            <input
-              type="email"
-              id="email"
-              name="email"
-              className="mt-1 p-2 w-full border rounded-lg"
-              placeholder="Email address"
-            />
-          </div>
+          <div className="w-full flex flex-col gap-2">
+              <label className="font-semibold text-xs text-gray-400 ">Email Address</label>
+              <input
+                type="email"
+                className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500"
+                placeholder="Email address"
+              />
+            </div>
 
-          <div className="mt-4">
-            <input
-              type="password"
-              id="password"
-              name="password"
-              className="mt-1 p-2 w-full border rounded-lg"
-              placeholder="Create Password"
-            />
-          </div>
+
+            <div className="w-full flex flex-col gap-2">
+              <label className="font-semibold text-xs text-gray-400 ">Create Password</label>
+              <input
+                type="password"
+                className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500"
+                placeholder="Create Password"
+              />
+            </div>
 
           <div className="mt-6">
             <button

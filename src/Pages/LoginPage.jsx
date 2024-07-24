@@ -5,7 +5,7 @@ import MeshGradientBackground from '../MeshGradientBackground';
 import Navbar from '../Components/Navbar';
 
 const LoginPage = () => {
-  const [currentComponent , setCurrentComponent] = useState ("signup");
+  const [currentComponent , setCurrentComponent] = useState ("login");
 
   const switchToLogin =()=>{
     setCurrentComponent('login')
