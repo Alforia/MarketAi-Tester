@@ -46,7 +46,7 @@ const Explore = () => {
 
   return (
     <>
-    <Header/>
+    {/* <Header/> */}
       {/* <div>
         <IoArrowBackCircleSharp className='absolute md:ml-20 lg:ml-28 mt-11 ml-4 sm:ml-10 text-primary rounded-full shadow-md cursor-pointer hover:text-blue-700' size={38} onClick={handleHome} />
       </div> */}

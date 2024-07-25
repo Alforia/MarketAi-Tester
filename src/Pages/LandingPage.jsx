@@ -12,7 +12,6 @@ import Steps from '../Components/Steps'
 const LandingPage = () => {
   return (
     <div>
-      <Navbar/>
       <Hero/>
       <Count/>
       <Features/>

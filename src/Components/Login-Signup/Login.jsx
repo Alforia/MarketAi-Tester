@@ -1,7 +1,15 @@
 import React from 'react';
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from 'react-router-dom';
 
-const Login = ({switchToForgot}) => {
+const Login = ({switchToForgot,handleLogin}) => {
+
+    const navigate = useNavigate ();
+
+    const handleLoginClick=()=>{
+        handleLogin();
+        navigate("/")
+    }
 
     return (
         <div className="w-screen min-h-screen flex items-center justify-center  px-4 sm:px-6 lg:px-8">
@@ -11,7 +19,7 @@ const Login = ({switchToForgot}) => {
                         <div className="flex flex-col items-center justify-center gap-2 mb-8">
                             
                             <h1 className="text-3xl font-bold">
-                                <span className="text-primary">Login</span> !!
+                                <span className="text-primary">Welcome</span> back
                             </h1>
                             <span className="m-0 text-xs max-w-[90%] text-center text-[#8B8E98]">Get started with our app, just start section and enjoy experience.
                             </span>
@@ -30,7 +38,7 @@ const Login = ({switchToForgot}) => {
                         </div>
 
                     </div>
-                    <div className="mt-5">
+                    <div className="mt-5" onClick={handleLoginClick}>
                         <button className="py-1 px-8 bg-primary hover:bg-blue-700 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg cursor-pointer select-none">Login</button>
                     </div>
 

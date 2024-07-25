@@ -4,7 +4,7 @@ import Signup from '../Components/Login-Signup/Signup';
 import MeshGradientBackground from '../MeshGradientBackground';
 import Forgot from '../Components/Login-Signup/Forgot';
 
-const LoginPage = () => {
+const LoginPage = ({handleLogin}) => {
   const [currentComponent , setCurrentComponent] = useState ("login");
 
   const switchToLogin =()=>{
@@ -21,12 +21,13 @@ const LoginPage = () => {
     console.log("clicked");
   }
 
+
   return (
     <div className=' w-full h-screen flex justify-center items-center px-8'>
       <MeshGradientBackground/>
       {
         currentComponent === "login" && (
-          <Login switchToSignup={switchToForgot}/>
+          <Login switchToSignup={switchToForgot} switchToForgot={switchToForgot} handleLogin={handleLogin}/>
         )
       }
       {
