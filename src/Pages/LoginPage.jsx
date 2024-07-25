@@ -5,10 +5,11 @@ import MeshGradientBackground from '../MeshGradientBackground';
 import Forgot from '../Components/Login-Signup/Forgot';
 
 const LoginPage = () => {
-  const [currentComponent , setCurrentComponent] = useState ("forgot");
+  const [currentComponent , setCurrentComponent] = useState ("login");
 
   const switchToLogin =()=>{
     setCurrentComponent('login')
+    console.log("switched");
   }
 
   const switchToSignup = ()=>{
@@ -25,7 +26,7 @@ const LoginPage = () => {
       <MeshGradientBackground/>
       {
         currentComponent === "login" && (
-          <Login switchToSignup={[switchToSignup, switchToForgot]}/>
+          <Login switchToSignup={switchToForgot}/>
         )
       }
       {

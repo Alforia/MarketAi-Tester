@@ -9,25 +9,18 @@ const Signup = ({ switchToLogin }) => {
           <span className="text-primary">Sign up</span> for a free account
         </h1>
 
-        <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-0 sm:gap-4">
+        <div className=' sm:w-96 w-60'>
+         
           <div className="flex flex-col gap-2">
-                <label className="font-semibold text-xs text-gray-400 ">First Name</label>
+                <label className="font-semibold text-xs text-gray-400 ">Full Name</label>
                 <input
                   type="text"
                   className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500"
-                  placeholder="First Name"
+                  placeholder="Full Name"
                 />
               </div>
-              <div className="flex flex-col gap-2">
-                <label className="font-semibold text-xs text-gray-400 ">Last Name</label>
-                <input
-                  type="text"
-                  className="border rounded-lg px-3 py-2 mb-5 text-sm w-full outline-none dark:border-gray-500"
-                  placeholder="Last Name"
-                />
-              </div>
-          </div>
+             
+          
 
           <div className="w-full flex flex-col gap-2">
               <label className="font-semibold text-xs text-gray-400 ">Email Address</label>

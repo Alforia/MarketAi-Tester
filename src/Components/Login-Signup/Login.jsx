@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { FcGoogle } from "react-icons/fc";
 
 const Login = ({switchToForgot}) => {
 
@@ -11,7 +11,7 @@ const Login = ({switchToForgot}) => {
                         <div className="flex flex-col items-center justify-center gap-2 mb-8">
                             
                             <h1 className="text-3xl font-bold">
-                                <span className="text-primary">Welcome</span> back
+                                <span className="text-primary">Login</span> !!
                             </h1>
                             <span className="m-0 text-xs max-w-[90%] text-center text-[#8B8E98]">Get started with our app, just start section and enjoy experience.
                             </span>
@@ -33,6 +33,21 @@ const Login = ({switchToForgot}) => {
                     <div className="mt-5">
                         <button className="py-1 px-8 bg-primary hover:bg-blue-700 focus:ring-offset-blue-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 rounded-lg cursor-pointer select-none">Login</button>
                     </div>
+
+                    <hr className="my-6 border-gray-300 w-full" />
+
+          <div className="mt-4 flex flex-col items-center">
+            <p className="text-gray-500">or sign up with</p>
+            <button
+              type="button"
+              className="mt-3 flex items-center justify-center w-full p-3 border border-gray-300 rounded-lg hover:bg-gray-100"
+            >
+                <div className=' flex gap-4 items-center '>
+              <FcGoogle size={25} />
+              <span>Sign up with Google</span>
+              </div>
+            </button>
+          </div>
                 </div>
             </div>
         </div>
