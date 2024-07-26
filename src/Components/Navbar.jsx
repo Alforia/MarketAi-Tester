@@ -38,12 +38,12 @@ function Navbar({ loggedIn, handleLogout }) {
             <li className='font-medium cursor-pointer'>
               <Link
                 activeClass="active"
-                to="features"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={-50}
               >
-                Features
+                Contact Us
               </Link>
             </li>
             <li className='font-medium cursor-pointer'>
