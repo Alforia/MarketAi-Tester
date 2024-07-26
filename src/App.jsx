@@ -9,6 +9,7 @@ import TermsPage from './Pages/TermsPage';
 import AboutUsPage from './Pages/AboutUsPage';
 import Footer from './Components/Footer';
 import RefundPolicy from './Pages/RefundPolicy';
+import Payment from './Pages/Payment';
 
 function App() {
 
@@ -33,6 +34,7 @@ function App() {
         <Route path='/terms' element={<TermsPage/>}/>
         <Route path='/aboutus' element={<AboutUsPage/>}/>
         <Route path='/refund-policies' element={<RefundPolicy/>}/>
+        <Route path='/payment' element={<Payment/>}/>
       </Routes>
       <Footer/>
     </Router>
