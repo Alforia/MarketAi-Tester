@@ -59,7 +59,12 @@ const Footer = () => {
                     <ul className=' flex gap-5'>
                         <li className=' font-medium cursor-pointer'>
                             <a href='/terms'>
-                                Terms & Privacy
+                                Terms
+                            </a>
+                        </li>
+                        <li className=' font-medium cursor-pointer'>
+                            <a href='/privacy'>
+                                Privacy
                             </a>
                         </li>
                         <li className=' font-medium cursor-pointer'>
@@ -119,7 +124,12 @@ const Footer = () => {
                     </li>
                     <li className=' font-medium cursor-pointer'>
                         <a href='/terms'>
-                        Terms & Privacy
+                        Terms
+                        </a>
+                    </li>
+                    <li className=' font-medium cursor-pointer'>
+                        <a href='/privacy'>
+                        Privacy
                         </a>
                     </li>
                     <li className=' font-medium cursor-pointer'>
